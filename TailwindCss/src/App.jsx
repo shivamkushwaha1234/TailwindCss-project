@@ -6,7 +6,7 @@ const [open, setOpen]=useState(false);
 const [theme,setTheme]=useState("light");  
   return(
   
-  <div className={`${theme} min-h-screen justify-between text-slate-900 dark:bg-slate-900 dark:text-white`}>
+  <div className={`${theme} min-h-screen justify-between text-slate-900 dark:bg-background dark:text-primary`}>
   {/* Navbvar */}
 <div className="flex items-center justify-between text-slate-900 dark:bg-slate-900 dark:text-white p-4">
   <div className="font-bold">Logo</div>
@@ -27,7 +27,7 @@ const [theme,setTheme]=useState("light");
 </div>
  {/* Mobile Nav */}
   {open &&(
-  <div className="flex flex-col items-center gap-2 bg-slate-900 text-white dark:text-white p-4 sm:hidden">
+  <div className="flex flex-col items-center gap-2  text-white dark:text-white p-4 sm:hidden">
     <span className="mr-2">Home</span>
     <span className="mr-2">About</span>
     <span className="mr-2">Contact</span>
@@ -38,7 +38,7 @@ const [theme,setTheme]=useState("light");
   )
 }
 
-<div className="grid dark:bg-slate-900  text-white dark:text-white grid-cols-1 sm:grid-cols-2 p-6 gap-6 text-center font-semibold text-2xl sm:text-sm">
+<div className="grid   text-white dark:text-white grid-cols-1 sm:grid-cols-2 p-6 gap-6 text-center font-semibold text-2xl sm:text-sm">
   <div className="bg-slate-500 p-4 rounded hover:bg-slate-600 hover:scale-105 transition-all duration-500" >Feature One</div>
   <div className="bg-slate-500 p-4 rounded hover:bg-slate-600" >Feature Two</div>
   <div className="bg-slate-500 p-4 rounded hover:bg-slate-600" >Feature Three</div>

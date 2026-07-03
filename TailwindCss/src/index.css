@@ -2,7 +2,9 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme{
+@theme {
     --color-background: #050030;
-    --color-text: #ebebed;
+    --color-primary: #ebebed;
+    --color-pedro: #ff00ccff;
 }
+
